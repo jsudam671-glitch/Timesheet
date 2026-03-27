@@ -1,0 +1,33 @@
+# Environment and Configuration
+config.php
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# OS Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# IDE
+.phpstorm.meta.php
+_ide_helper.php
+
+# Database
+*.sql
+database_backup/
+
+# Cache
+cache/
+.cache/

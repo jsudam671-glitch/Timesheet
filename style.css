@@ -1,0 +1,311 @@
+/* Timesheet Application Styles */
+
+:root {
+    --primary-color: #0d6efd;
+    --danger-color: #dc3545;
+    --success-color: #198754;
+    --border-color: #dee2e6;
+    --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Form Controls */
+.form-control,
+.form-select {
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 80px;
+    font-family: inherit;
+}
+
+/* Table Styles */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #f1f3f5;
+    border-color: var(--border-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    padding: 12px 8px;
+}
+
+.table tbody td {
+    border-color: var(--border-color);
+    padding: 10px 8px;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.table-responsive {
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+}
+
+/* Input within table */
+.table input,
+.table select,
+.table textarea {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.table input:focus,
+.table select:focus,
+.table textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.1);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5c636a;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+}
+
+.btn-success:hover {
+    background-color: #157347;
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+}
+
+.btn-danger:hover {
+    background-color: #bb2d3b;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+}
+
+/* Alert Styles */
+.alert {
+    border: none;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border-left: 4px solid var(--success-color);
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+    border-left: 4px solid var(--danger-color);
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #664d03;
+    border-left: 4px solid #ff9800;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border-left: 4px solid #17a2b8;
+}
+
+/* Label Styles */
+.form-label {
+    margin-bottom: 8px;
+    color: #212529;
+    font-weight: 500;
+}
+
+.invalid-feedback {
+    display: block;
+    color: var(--danger-color);
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+.was-validated .form-control:invalid {
+    border-color: var(--danger-color);
+}
+
+.was-validated .form-control:invalid:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Icons */
+.bi {
+    margin-right: 6px;
+    vertical-align: -2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 20px;
+    }
+
+    .table {
+        font-size: 0.85rem;
+    }
+
+    .table input,
+    .table select,
+    .table textarea {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .d-md-flex {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .d-md-flex .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .d-md-flex .btn:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .btn,
+    .d-grid {
+        display: none !important;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid var(--border-color);
+    }
+
+    .table {
+        background-color: white;
+        border-collapse: collapse;
+    }
+}
+
+/* Accessibility */
+.form-control:disabled,
+.form-select:disabled,
+button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+/* Loading State */
+.btn:disabled {
+    pointer-events: none;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert {
+    animation: slideIn 0.3s ease-in-out;
+}
+
+th:nth-child(6), td:nth-child(6){ width:220px; } /* Remarks */
+th:nth-child(7), td:nth-child(7){ width:120px; } /* Type */
+
+button{
+    padding:6px 15px;
+    margin-top:10px;
+}
