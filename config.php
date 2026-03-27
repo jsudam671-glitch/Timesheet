@@ -1,5 +1,11 @@
 <?php
-// Database Configuration
+// Database Configuration Development
+// define('DB_HOST', 'localhost');
+// define('DB_USER', 'root');
+// define('DB_PASS', '');
+// define('DB_NAME', 'timesheet_pro');
+
+// Database Configuration Staging
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
