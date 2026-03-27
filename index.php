@@ -221,6 +221,5 @@ function validateForm(e) {
     form.classList.add('was-validated');
 }
 </script>
-
 </body>
 </html>
